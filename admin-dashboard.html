@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Payroll System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Admin Dashboard Header -->
+    <header class="dashboard-header">
+        <div class="dashboard-title">
+            <h1><i class="fas fa-user-shield"></i> Admin Dashboard</h1>
+            <p>Payroll Management System</p>
+        </div>
+        <div class="user-info">
+            <span>Welcome, <strong>Admin</strong></span>
+            <a href="index.html" class="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</a>
+        </div>
+    </header>
+    
+    <!-- Dashboard Layout -->
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <a href="#" class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+                <a href="#"><i class="fas fa-users"></i> Employee Management</a>
+                <a href="#"><i class="fas fa-calendar-alt"></i> Attendance</a>
+                <a href="#"><i class="fas fa-money-bill-wave"></i> Process Payroll</a>
+                <a href="#"><i class="fas fa-file-invoice"></i> Payslips</a>
+                <a href="#"><i class="fas fa-chart-pie"></i> Reports</a>
+                <a href="#"><i class="fas fa-cog"></i> Settings</a>
+            </nav>
+        </aside>
+        
+        <!-- Main Content -->
+        <main class="dashboard-content">
+            <!-- Stats Cards -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon total-employees">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Total Employees</h3>
+                        <p class="stat-number">48</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon payroll-processed">
+                        <i class="fas fa-money-check"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Payroll Processed</h3>
+                        <p class="stat-number">₹35,00,000</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon pending-requests">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Pending Requests</h3>
+                        <p class="stat-number">7</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon this-month">
+                        <i class="fas fa-calendar"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>This Month</h3>
+                        <p class="stat-number">March 2024</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Quick Actions -->
+            <div class="section-title">
+                <h2><i class="fas fa-bolt"></i> Quick Actions</h2>
+            </div>
+            
+            <div class="quick-actions">
+                <button class="action-btn">
+                    <i class="fas fa-user-plus"></i>
+                    <span>Add New Employee</span>
+                </button>
+                <button class="action-btn">
+                    <i class="fas fa-calculator"></i>
+                    <span>Process Payroll</span>
+                </button>
+                <button class="action-btn">
+                    <i class="fas fa-file-export"></i>
+                    <span>Generate Reports</span>
+                </button>
+                <button class="action-btn">
+                    <i class="fas fa-envelope"></i>
+                    <span>Send Payslips</span>
+                </button>
+            </div>
+            
+            <!-- Recent Activity -->
+            <div class="section-title">
+                <h2><i class="fas fa-history"></i> Recent Activity</h2>
+            </div>
+            
+            <div class="recent-activity">
+                <table class="activity-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Employee</th>
+                            <th>Activity</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mar 15, 2024</td>
+                            <td>Ram</td>
+                            <td>Salary processed for March</td>
+                            <td><span class="status completed">Completed</span></td>
+                        </tr>
+                        <tr>
+                            <td>Mar 14, 2024</td>
+                            <td>Raju</td>
+                            <td>Leave request submitted</td>
+                            <td><span class="status pending">Pending</span></td>
+                        </tr>
+                        <tr>
+                            <td>Mar 13, 2024</td>
+                            <td>Vijay</td>
+                            <td>Tax details updated</td>
+                            <td><span class="status completed">Completed</span></td>
+                        </tr>
+                        <tr>
+                            <td>Mar 12, 2024</td>
+                            <td>Ramya</td>
+                            <td>Bonus added to salary</td>
+                            <td><span class="status completed">Completed</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- Payroll Summary -->
+            <div class="section-title">
+                <h2><i class="fas fa-chart-line"></i> Payroll Summary</h2>
+            </div>
+            
+            <div class="summary-card">
+                <div class="summary-item">
+                    <h4>Total Payroll This Month</h4>
+                    <p class="summary-value">₹35,00,000</p>
+                </div>
+                <div class="summary-item">
+                    <h4>Average Salary</h4>
+                    <p class="summary-value">₹30,000</p>
+                </div>
+                <div class="summary-item">
+                    <h4>Tax Deductions</h4>
+                    <p class="summary-value">₹5,000</p>
+                </div>
+                <div class="summary-item">
+                    <h4>Net Payment</h4>
+                    <p class="summary-value">₹25,000</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <footer class="dashboard-footer">
+        <p>Payroll Management System &copy; 2023 | Admin Dashboard</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

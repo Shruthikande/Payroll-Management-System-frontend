@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Dashboard - Payroll System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Employee Dashboard Header -->
+    <header class="dashboard-header employee-header">
+        <div class="dashboard-title">
+            <h1><i class="fas fa-user-tie"></i> Employee Dashboard</h1>
+            <p>Welcome to your payroll portal</p>
+        </div>
+        <div class="user-info">
+            <span>ID: <strong>EMP001</strong> | Raju</span>
+            <a href="index.html" class="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</a>
+        </div>
+    </header>
+    
+    <!-- Dashboard Layout -->
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar employee-sidebar">
+            <div class="employee-profile">
+                <div class="profile-img">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <h3>Raju</h3>
+                <p>Software Developer</p>
+                <p class="employee-id">ID: EMP001</p>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <a href="#" class="active"><i class="fas fa-home"></i> Dashboard</a>
+                <a href="#"><i class="fas fa-file-invoice-dollar"></i> My Payslips</a>
+                <a href="#"><i class="fas fa-calendar-check"></i> Attendance</a>
+                <a href="#"><i class="fas fa-user-edit"></i> Profile</a>
+                <a href="#"><i class="fas fa-history"></i> Salary History</a>
+                <a href="#"><i class="fas fa-taxi"></i> Tax Information</a>
+                <a href="#"><i class="fas fa-question-circle"></i> Help</a>
+            </nav>
+        </aside>
+        
+        <!-- Main Content -->
+        <main class="dashboard-content">
+            <!-- Employee Stats -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon employee-salary">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Current Salary</h3>
+                        <p class="stat-number">₹42,000</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon employee-leaves">
+                        <i class="fas fa-umbrella-beach"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Leaves Remaining</h3>
+                        <p class="stat-number">12 days</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon employee-tax">
+                        <i class="fas fa-percentage"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Tax Deduction</h3>
+                        <p class="stat-number">₹4,550</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon employee-net">
+                        <i class="fas fa-wallet"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Net Salary</h3>
+                        <p class="stat-number">₹37,500</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Recent Payslip -->
+            <div class="section-title">
+                <h2><i class="fas fa-file-invoice"></i> Recent Payslip - March 2024</h2>
+            </div>
+            
+            <div class="payslip-card">
+                <div class="payslip-header">
+                    <h3>Salary Breakdown</h3>
+                    <button class="btn download-btn"><i class="fas fa-download"></i> Download PDF</button>
+                </div>
+                
+                <div class="payslip-details">
+                    <div class="payslip-row">
+                        <div class="payslip-label">Basic Salary</div>
+                        <div class="payslip-value">₹30,300</div>
+                    </div>
+                    <div class="payslip-row">
+                        <div class="payslip-label">House Rent Allowance</div>
+                        <div class="payslip-value">₹6,100</div>
+                    </div>
+                    <div class="payslip-row">
+                        <div class="payslip-label">Travel Allowance</div>
+                        <div class="payslip-value">₹3,000</div>
+                    </div>
+                    <div class="payslip-row">
+                        <div class="payslip-label">Bonus</div>
+                        <div class="payslip-value">₹3,100</div>
+                    </div>
+                    <div class="payslip-row total-earnings">
+                        <div class="payslip-label">Total Earnings</div>
+                        <div class="payslip-value">₹42,500</div>
+                    </div>
+                    
+                    <div class="payslip-divider"></div>
+                    
+                    <div class="payslip-row deduction">
+                        <div class="payslip-label">Income Tax</div>
+                        <div class="payslip-value">₹3,200</div>
+                    </div>
+                    <div class="payslip-row deduction">
+                        <div class="payslip-label">Provident Fund</div>
+                        <div class="payslip-value">₹1,150</div>
+                    </div>
+                    <div class="payslip-row deduction">
+                        <div class="payslip-label">Professional Tax</div>
+                        <div class="payslip-value">₹200</div>
+                    </div>
+                    <div class="payslip-row total-deductions">
+                        <div class="payslip-label">Total Deductions</div>
+                        <div class="payslip-value">₹4,550</div>
+                    </div>
+                    
+                    <div class="payslip-divider"></div>
+                    
+                    <div class="payslip-row net-salary">
+                        <div class="payslip-label">Net Salary Payable</div>
+                        <div class="payslip-value">₹37,500</div>
+                    </div>
+                </div>
+                
+                <div class="payslip-footer">
+                    <p><i class="fas fa-info-circle"></i> Salary will be credited to your bank account by March 28, 2024</p>
+                </div>
+            </div>
+            
+            <!-- Upcoming Holidays -->
+            <div class="section-title">
+                <h2><i class="fas fa-calendar-alt"></i> Upcoming Holidays</h2>
+            </div>
+            
+            <div class="holidays-list">
+                <div class="holiday-item">
+                    <div class="holiday-date">
+                        <span class="holiday-day">14</span>
+                        <span class="holiday-month">Apr</span>
+                    </div>
+                    <div class="holiday-details">
+                        <h4>Good Friday</h4>
+                        <p>Public Holiday</p>
+                    </div>
+                </div>
+                
+                <div class="holiday-item">
+                    <div class="holiday-date">
+                        <span class="holiday-day">15</span>
+                        <span class="holiday-month">Aug</span>
+                    </div>
+                    <div class="holiday-details">
+                        <h4>Independence day</h4>
+                        <p>National holiday</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Quick Links -->
+            <div class="section-title">
+                <h2><i class="fas fa-link"></i> Quick Links</h2>
+            </div>
+            
+            <div class="quick-links">
+                <a href="#" class="quick-link">
+                    <i class="fas fa-edit"></i>
+                    <span>Update Profile</span>
+                </a>
+                <a href="#" class="quick-link">
+                    <i class="fas fa-calendar-plus"></i>
+                    <span>Apply for Leave</span>
+                </a>
+                <a href="#" class="quick-link">
+                    <i class="fas fa-history"></i>
+                    <span>View Salary History</span>
+                </a>
+                <a href="#" class="quick-link">
+                    <i class="fas fa-question-circle"></i>
+                    <span>Raise a Query</span>
+                </a>
+            </div>
+        </main>
+    </div>
+    
+    <footer class="dashboard-footer">
+        <p>Payroll Management System &copy; 2023 | Employee Dashboard</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
